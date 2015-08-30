@@ -59,7 +59,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#" class="self">Home</a>
                     </li>
                     <li>
                         <a href="professional.html">Professional</a>
@@ -74,11 +74,12 @@
         <!-- /.container -->
     </nav>
 
- <img id="cover" src="tablerock.jpg" style="width:120%" alt="..."> <!--alt for alternative text if image can't display-->
-<div class="over-image">
-    <h1><em>Hello.</em></h1>
-
-</div>
+    <div class="cover">
+        <img id="cover-image" src="baldrock.jpg" style="width:100%" alt="..."> <!--alt for alternative text if image can't display-->
+        <div class="over-image">
+            <h1><em>Hello.</em></h1>
+        </div>
+    </div>
     
 
     <!--PAGE CONTENT-->
@@ -86,64 +87,31 @@
 
     <h2>My name is Bailey A.</h2>
 
-        <!-- Columns of text below the carousel -->
-        <div class="row">
-            <div class="col-md-4">
-                <img class="img-circle" src="http://placehold.it/140x140">
-                <p>Tablets, phones, laptops. The new 3 promises to be mobile friendly from the start.</p>
-            </div>
+      <!-- START THE FEATURETTES -->
 
-        </div><!-- /.row -->
-
-
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Half Slider by Start Bootstrap</h1>
-                <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the <code>half-slider.css</code>file.</p>
-            </div>
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-3" > <!--pushes it to the right-->
+          <h3 class="featurette-heading">← This is me.<span class="text-muted">I am...</span></h3>
+          <p class="lead">an aspiring software designer in my third year at the University of Florida. With a major in Computer Science and a minor in Communication Studies, I like to code things and then make people listen to me talk about it.</p>
         </div>
-
-
-<!-- CAROUSEL -->
-    <header id="myCarousel" class="carousel slide"> <!--slide class for animated cycling-->
-        <!--INDICATORS (radio buttons showing which slide user is on)-->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li> <!--have to add active to one slide to make them visible-->
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- SLIDES -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="..." style="width:100%" alt="..."> <!--alt for alternative text if image can't display-->
-                <div class="carousel-caption">
-                    <h2>Caption 1</h2>
-                </div>
-            </div>
-            <div class="item">
-                <img src="/assets/example/bg_suburb.jpg" style="width:100%" alt="...">
-                <div class="carousel-caption">
-                    <h2>Caption 2</h2>
-                </div>
-            </div>
-            <div class="item">
-                <img src="/assets/example/bg_suburb.jpg" style="width:100%" alt="...">
-                <div class="carousel-caption">
-                    <h2>Caption 3</h2>
-                </div>
-            </div>
+        <div class="col-md-5 col-md-pull-8"> <!--pulls it to the left-->
+          <img class="featurette-image img-responsive center-block" src="me.png" alt="This would have been a picture of me if it had loaded correctly. Unfortunately, I guess you'll have to use your imagination.">
         </div>
+      </div>
 
-        <!--CONTROLS-->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
 
-    </header>
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-1">
+          <h3 class="featurette-heading" id="dog-heading">This is my dog Dandy. →<span class="text-muted"></span></h3>
+          <p class="lead" id="dog-text">He is approximately equally important. He has never <br> programmed anything (but I would support him if he wanted to).</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="dan.png" alt="Picture a small shih tzu with a small bowtie.">
+        </div>
+      </div>
+    <h2>Please reference the tabs above for further information.</h2>
+      <!-- /END THE FEATURETTES -->
 
         <hr>
 
@@ -159,20 +127,6 @@
 
     </div>
     <!-- /.container -->
-
-    <!--SCRIPTS FOR CAROUSEL-->
-    <!-- jQuery -->
-    <script src="jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //5000 is default speed anyway, but here is where you'd change that
-    })
-    </script>
 
 </body>
 
