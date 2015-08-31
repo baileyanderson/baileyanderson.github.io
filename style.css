@@ -91,7 +91,7 @@ hr
 {
     position: relative;
     background-color: #D3DCF5;
-    border: dashed 5px #BDC9E8;
+    border: solid 5px #BDC9E8;
     border-top: none;
     padding-bottom: 50px;
     border-bottom: 3px solid #7E8DBB;
