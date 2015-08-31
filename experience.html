@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Setting up the page-->
 <head>
     <!--PAGE INFORMATION-->
+    <!--These 3 have to come first-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,12 +12,13 @@
     <meta name="description" content="Personal Webpage">
     <meta name="author" content="Bailey Anderson, University of Florida">
 
+    <!--Tab Heading-->
     <title>BA Professional</title>
 
-    <!--LINK(s) TO STYLESHEET (both necessary)-->
-    <!-- Bootstrap Core CSS -->
+    <!--LINK(s) TO STYLESHEET (both are necessary and combine to make the final style)-->
+    <!--Bootstrap Core CSS-->
     <link href="bootstrap.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <!--Custom CSS-->
     <link href="style.css" rel="stylesheet">
 
     <!--FONTS-->
@@ -34,11 +37,12 @@
     <![endif]-->
 </head>
 
+<!--Page content-->
 <body>
     <!--NAVIGATION BAR-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container" id="topbar">
-            <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container" id="topbar"> <!--ID to set aside top bar from other containers for custom style specifications-->
+            <!--Grouping brand and toggle for better display on mobile-->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -47,8 +51,9 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--Collecting the nav links for toggling-->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--The links that will go in the bar-->
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="index.html">Home</a>
@@ -73,13 +78,14 @@
 
         <h3>Education</h3>
         <hr>
+        <!--Since the resume layout I want has 2 columns (information and date) and also can be organized into several rows, organized in a table layout for easy alignment-->
             <table>
-                <tr>
-                    <th>Bachelor of Computer Science</th>
-                    <th id="date">May 2017</th>
+                <tr> <!--First row of cells-->
+                    <th>Bachelor of Computer Science</th> <!--th will make this bold. This works because this cell is the title of the resume element.-->
+                    <th class="date">May 2017</th> <!--class to set the date cells apart for special style-->
                 </tr>
-                <tr>
-                    <td>University of Florida, Gainesville, Florida
+                <tr> <!--Second row of cells-->
+                    <td>University of Florida, Gainesville, Florida <!--this row is one for table data-->
                         <ul>
                             <li>Grade Point Average: 3.97</li>
                             <li>Summary of Relevant Coursework:
@@ -96,12 +102,12 @@
                             </li>
                         </ul>
                     </td>
-                    <td id="date"></td>
+                    <td class="date"></td>
                 </tr>
 
                 <tr>
-                    <th>Minor in Communication Studies</th>
-                    <th id="date">May 2017</th>
+                    <th>Minor in Communication Studies</th> 
+                    <th class="date">May 2017</th>
                 </tr>
                 <tr>
                     <td>University of Florida, Gainesville, Florida</td>
@@ -113,7 +119,7 @@
             <table>
                 <tr>
                     <th>Public Speaking Consultant</th>
-                    <th id="date">Jan.-May 2015</th>
+                    <th class="date">Jan.-May 2015</th>
                 </tr>
                 <tr>
                     <td>University of Florida Dial Center for Written and Oral Communication, Gainesville, Florida
@@ -123,12 +129,12 @@
                             <li>Honed communication skills through relating to and working with clients</li>
                         </ul>
                     </td>
-                    <td id="date"></td>
+                    <td class="date"></td>
                 </tr>
 
                 <tr>
-                    <th>Notetaker and Editor</th>
-                    <th id="date">Jan.-May 2014</th>
+                    <th>Notetaker and Editor</th> <!--th for bold head (resume element title-->
+                    <th class="date">Jan.-May 2014</th>
                 </tr>
                 <tr>
                     <td>Smokin' Notes, Gainesville, Florida
@@ -145,7 +151,7 @@
             <table>
                 <tr>
                     <th>2015-2016 Secretary of Epsilon Sigma chapter of Eta Kappa Nu,<br>Electrical and Computer Engineering Honor Society</th>
-                    <th id="date">April 2015-present<br>(Member from Dec. 2014)</th>
+                    <th class="date">April 2015-present<br>(Member from Dec. 2014)</th>
                 </tr>
                 <tr>
                     <td>
@@ -156,12 +162,12 @@
                             <li>Will be responsible for monitoring and communicating induction requirements for incoming members</li>
                         </ul>
                     </td>
-                    <td id="date"></td>
+                    <td class="date"></td>
                 </tr>
 
                 <tr>
                     <th>First Place Winner of University of Florida’s 2014 Annual Public Speaking Forum</th>
-                    <th id="date">March 2014</th>
+                    <th class="date">March 2014</th>
                 </tr>
                 <tr>
                     <td>
@@ -176,7 +182,7 @@
         <h3>Additional Skills and Experience</h3>
         <hr>
             <table>
-                <tr>
+                <tr> <!--No table heads because these elements, since they don't have descriptions, are all equal and thus no lines need to be bold for emphasis-->
                     <td>
                         <ul>
                             <li>Experience with object-oriented coding (Java, C++)</li>
@@ -200,6 +206,11 @@
         </div>
         <!-- /.row -->
     </footer>
+
+    <!--Latest compiled and minified JAVASCRIPT (necessary for collapsed navbar to work)-->
+    <!--Included on the bottom for faster page loading-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="jquery.js"></script>
 
 </body>
 

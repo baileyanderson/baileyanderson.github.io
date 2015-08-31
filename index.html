@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Setting up the page-->
 <head>
     <!--PAGE INFORMATION-->
+    <!--These 3 have to come first-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,12 +12,13 @@
     <meta name="description" content="Personal Webpage">
     <meta name="author" content="Bailey Anderson, University of Florida">
 
+    <!--Tab Heading-->
     <title>Bailey Anderson</title>
 
-    <!--LINK(s) TO STYLESHEET (both necessary)-->
-    <!-- Bootstrap Core CSS -->
+    <!--LINK(s) TO STYLESHEET (both are necessary and combine to make the final style)-->
+    <!--Bootstrap Core CSS-->
     <link href="bootstrap.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <!--Custom CSS-->
     <link href="style.css" rel="stylesheet">
 
     <!--FONTS-->
@@ -34,12 +37,12 @@
     <![endif]-->
 </head>
 
+<!--Page content-->
 <body>
-
     <!--NAVIGATION BAR-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container" id="topbar">
-            <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container" id="topbar"> <!--ID to set aside top bar from other containers for custom style specifications-->
+            <!--Grouping brand and toggle for better display on mobile-->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -48,8 +51,9 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--Collecting the nav links for toggling-->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--The links that will go in the bar-->
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="#" class="self">Home</a>
@@ -80,27 +84,27 @@
 
         <!-- START THE FEATURETTES -->
         <div class="row featurette">
-            <div class="col-md-7 col-md-push-3" > <!--pushes it to the right-->
+            <div class="col-md-7 col-md-push-3" > <!--sets content in columns based on view size and pushes it to the right by reordering grid columns-->
               <h3 class="featurette-heading">← This is me.<span class="text-muted"> I am...</span></h3>
               <p class="lead">an aspiring software developer in my third year at the University of Florida. Being in pursuit of a Bachelor's in Computer Science with a minor in Communication Studies, I like to code things and then make people listen to me talk about it.</p>
             </div>
-            <div class="col-md-5 col-md-pull-8"> <!--pulls it to the left-->
+            <div class="col-md-5 col-md-pull-8"> <!--sets in columns and pulls it to the left-->
               <img class="featurette-image img-responsive center-block" src="photos/me.png" alt="This would have been a picture of me if it had loaded correctly. Unfortunately, I guess just use your imagination.">
             </div>
         </div>
 
         <div class="row featurette">
-            <div class="col-md-7 col-md-push-1">
-              <h3 class="featurette-heading" id="dog-heading">This is my dog Dandy. →<span class="text-muted"></span></h3>
+            <div class="col-md-7 col-md-push-1"> <!--sets stuff in columns and pushes it to the right-->
+              <h3 class="featurette-heading" id="dog-heading">This is my dog Dandy. →<span class="text-muted"></span></h3> <!--ID so that the section about the dog still functions as a featurette, but can have special size and orientation-->
               <p class="lead" id="dog-text">He is approximately equally important. He has never <br> programmed anything (but I'd support him if he wanted to).</p>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5"> <!--sets stuff in columns-->
               <img class="featurette-image img-responsive center-block" src="photos/dan.png" alt="Picture a small shih tzu with a small bowtie." id="dog-pic">
             </div>
         </div>
         <!-- /END THE FEATURETTES -->
 
-        <h2 id="pre-footer">Please see the tabs above for further professional details.</h2>
+        <h2 id="pre-footer">Please see the tabs above for further professional details.</h2> <!--ID to manipulate position for this special section of h2-type text-->
 
     </div>
     <!-- /.container -->
@@ -115,8 +119,10 @@
         <!-- /.row -->
     </footer>
 
-    <!-- Latest compiled and minified JavaScript -->
+    <!--Latest compiled and minified JAVASCRIPT (necessary for collapsed navbar to work)-->
+    <!--Included on the bottom for faster page loading-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="jquery.js"></script>
 
 </body>
 

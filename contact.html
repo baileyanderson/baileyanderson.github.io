@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--Setting up the page-->
 <head>
     <!--PAGE INFORMATION-->
+    <!--These 3 have to come first-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,12 +12,13 @@
     <meta name="description" content="Personal Webpage">
     <meta name="author" content="Bailey Anderson, University of Florida">
 
+    <!--Tab Heading-->
     <title>BA Contact</title>
 
-    <!--LINK(s) TO STYLESHEET (both necessary)-->
-    <!-- Bootstrap Core CSS -->
+    <!--LINK(s) TO STYLESHEET (both are necessary and combine to make the final style)-->
+    <!--Bootstrap Core CSS-->
     <link href="bootstrap.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <!--Custom CSS-->
     <link href="style.css" rel="stylesheet">
 
     <!--FONTS-->
@@ -26,7 +29,7 @@
     <link rel="icon" type="image/png" href="photos/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="photos/favicon-16x16.png" sizes="16x16" />
 
-    <!--ICONS-->
+    <!--ICONS FOR USE IN PAGE-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Apparently Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -37,12 +40,12 @@
     <![endif]-->
 </head>
 
+<!--Page content-->
 <body>
-
     <!--NAVIGATION BAR-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container" id="topbar">
-            <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container" id="topbar"> <!--ID to set aside top bar from other containers for custom style specifications-->
+            <!--Grouping brand and toggle for better display on mobile-->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -51,7 +54,7 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--Collecting the nav links for toggling-->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
@@ -75,19 +78,19 @@
         <h2>Should you like to get in touch,<br>I can be contacted through the following mediums:</h2>
 
 
-        <!-- Three columns of text below the carousel -->
+        <!-- Three columns of text below the carousel-->
         <div class="row columns">
 
-            <div class="col-lg-4">
-                <div class="pic">
-                    <i class="fa fa-laptop"></i>
+            <div class="col-lg-4"> <!--sets content in columns based on view size and pushes it to the right by reordering grid columns-->
+                <div class="icons">
+                    <i class="fa fa-laptop"></i> <!--pulls laptop icon from source included in the head-->
                 </div>
                 <h3>Email</h3>
                 <p>baileyanderson3@gmail.com</p>
             </div><!-- /.col-lg-4 -->
 
             <div class="col-lg-4">
-                <div class="pic light">
+                <div class="icons light"> <!--class to set aside the less-important icons so that this can be reflected by style-->
                     <i class="fa fa-envelope"></i>
                 </div>
                 <h3>Traditional Mail</h3>
@@ -95,7 +98,7 @@
             </div><!-- /.col-lg-4 -->
 
             <div class="col-lg-4">
-                <div class="pic light">
+                <div class="icons light">
                     <i class="fa fa-phone"></i>
                 </div>
                 <h3>Phone</h3>
@@ -115,6 +118,10 @@
         <!-- /.row -->
     </footer>
 
+    <!--Latest compiled and minified JAVASCRIPT (necessary for collapsed navbar to work)-->
+    <!--Included on the bottom for faster page loading-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="jquery.js"></script>
 </body>
 
 </html>

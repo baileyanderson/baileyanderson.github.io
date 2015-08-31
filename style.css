@@ -4,20 +4,20 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-
+/*STYLE SPECIFICATIONS FOR PARTICULAR TYPES OF CONTENT & CONTENT COMMON ACROSS ALL PAGES*/
 html,
-
 body 
 {
-    background-color: #E3E9FC;
+    background-color: #E3E9FC; /*Background color of all pages*/
     height: 100%;
 }
-h1
+h1 /*only appears in "Hello" text on home page*/
 {
     text-align: center;
     color: #636F92;
-    font-family: 'Lobster Two', Geneva, sans-serif;
+    font-family: 'Lobster Two', Geneva, sans-serif; /*hierarchy of fonts to try based on what browswer supports*/
     text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+    font-size: 10em;
 }
 h2
 {
@@ -25,139 +25,158 @@ h2
     color: #6C79A0;
     font: 400 40px/1.3 'Lobster Two', Geneva, sans-serif;
 }
-h3
+h3 
 {
     color: #6C79A0;
     font: 400 30px/1.3 'Lobster Two', Geneva, sans-serif;
 }
 p
 {
-
     font-family: 'Cabin', Geneva, sans-serif;
-    position: relative;
 }
-footer 
+footer
 {
     margin: 20px 20px;
     color: #636F92;
 }
-hr
+hr /*A horizontal line*/
 {
     margin-top: -1em;
     border: 1px solid #7E8DBB;
     width: 100%;
 }
 
-.self
+.first /*Used to designate which element is the first one following the navigation bar and adjust it accordingly*/
 {
-    text-decoration: underline !important;
+    padding-top: 55px;
 }
-.cover
+.first > h2 /*Used in experience.html and contact.html; if the header is in the first element, it should be centered. Otherwise, h2 headers are left-aligned.*/
 {
-    position: relative;
+    text-align: center;
+}
+
+/*STYLE SPECIFICATIONS FOR CUSTOMIZED ELEMENTS IN INDEX.HTML: CLASSES*/
+.self /*Used in navigation bar links to keep track of which page the user is on*/
+{
+    text-decoration: underline !important; /*designates this as the prevalent style element*/
+}
+.cover /*Used to designate the container across the top of the homepage; consists of image and h1 text*/
+{
+    position: relative; /*Declared relative position so that absolute contained elements will be positioned relative to it*/
     height: 50%;
     width:100%;
     border-bottom: 5px solid #7E8DBB;
 }
-.cover > h1
+.cover > h1 /*Although this happens to be the ONLY instance of h1, it seems appropriate to declare the positioning information separately from the general title-type appearance, in the instance of any more instances of h1 being added in the future.*/
 {
-    font-size: 10em;
-    position: absolute;
+    position: absolute; /*Declared absolute position so that it will be positioned relative to non-static parent (.cover)*/
     top: 25%;
     left: 10%;
     right: 10%;
     z-index: 10;
     padding-bottom: 20px;
 }
-.first
-{
-    padding-top: 55px;
-}
-.first > h2
-{
-    text-align: center;
-}
-#topbar
+
+/*STYLE SPECIFICATIONS FOR CUSTOMIZED ELEMENTS IN INDEX.HTML: IDs*/
+#topbar /*Refers to the navigation bar*/
 {
     background-color: #C6D1F0;
 }
-#cover-image
+#cover-image /*Refers to the cover image near the top of the page (part of .cover)*/
 {
     height: 100%;
     width: 100%;
     opacity: 0.4;
 }
-#content
+#content /*Refers to the main page content underneath the .cover section*/
 {
     position: relative;
     background-color: #D3DCF5;
+    padding-bottom: 50px;
     border: solid 5px #BDC9E8;
     border-top: none;
-    padding-bottom: 50px;
     border-bottom: 3px solid #7E8DBB;
 }
-#dog-text
+/*There happen to be only two featurettes at this time, one of which is dog-themed and individually formatted to appear smaller than the other. 
+Were more featurettes to be created, they should take after the general .featurettes class (see line 174)... and so the dog-themed elements are separated for individual styling*/
+#dog-text /*Refers to the text within the dog-themed featurette*/
 {
     text-align: right;
     font-size: 17px;
 }
-#dog-heading
+#dog-heading /*Refers to the heading within the dog-themed featurette*/
 {
     text-align: right;
     font-size: 25px;
 }
-#dog-pic
+#dog-pic /*Refers to the picture within the dog-themed featurette*/
 {
     max-width: 55%;
     height: auto;
 }
-#pre-footer
+#pre-footer /*This is not a footer, but positioned relative to the bottom similarly to the way a footer would be*/
 {
     position: absolute;
     bottom: 5%;
     display: block;
 }
 
+/*STYLE SPECIFICATIONS FOR CUSTOMIZED ELEMENTS IN CONTACT.HTML*/
+.columns
+{
+    text-align: center;
+}
+.icons /*A class to control the positioning of icons*/
+{
+    display: inline-block; /*Inline block so that they can sit on the same line*/
+    font-size: 180px; /*Controls icon size*/
+    margin-bottom: -1em;
+    margin-left: auto; /*auto margins to center*/
+    margin-right: auto;
+
+}
+.light /*Further icon specification (inside .icons) indicating the icons that are less important so that they may be lightened*/
+{
+    opacity: 0.7;
+    padding-top: 17px; /*These icons also happen to appear a slightly different size than the other, so positions are adjusted here accordingly*/
+    font-size: 150px;
+}
+
+/*STYLE SPECIFICATIONS FOR CUSTOMIZED ELEMENTS IN EXPERIENCE.HTML*/
+table /*There is currently only one table on the site, so manipulating all table conditions will suffice. 
+Should additional tables be added in the future with more conventional table designs, it may be a good idea to further specify this particular table with a class.*/
+{
+    font-family: 'Cabin', Geneva, sans-serif;
+    width: 96%;
+    font-size: 20px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+.date /*A more specific class inside the table to designate cells as cells containing date information so they may be formatted as such*/
+{
+    text-align: right;
+    font-style: italic;
+}
 
 /*OVERRIDING BOOTSTRAP.CSS*/
-.item,
-.active,
-.carousel-inner {
-    height: 100%;
-}
-.fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-.featurette
+.featurette /*Refers to the featurettes in index.html.*/
 {
     display: block;
     padding-left: 30px;
 }
-
-.img-circle
+.navbar-inverse /*Bar across the screen overlaid with the actual navbar content so that it seems to stretch across the entire screen*/
 {
-    display: inline;
-    padding-right: 10px;
-}
-/*edges of the navbar*/
-.navbar-inverse {
     background-color: #C6D1F0;
     border-bottom: 5px solid #7E8DBB;
-
 }
-/*navbar text*/
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a /*Text inside of the navbar*/
+{
   color: #7E8DBB;
   font-family: 'Cabin', Geneva, sans-serif;
   font-size: 1.56em;
   font-weight: 700;
 }
+/*Small manipulations of col padding to tweak element positioning*/
 .col-md-5
 {
     display: inline;
@@ -168,49 +187,12 @@ hr
     display: inline;
     padding-left: 80px;
 }
-/*picture*/
+/*Used as default for images in index.html*/
 .img-responsive,
 .thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.thumbnail a > img
+{
   display: block;
-  max-width: 75%;
+  max-width: 75%; /*Primary control of size*/
   height: auto;
-}
-
-/*CONTACT PAGE*/
-.columns
-{
-    text-align: center;
-}
-.pic
-{
-    display: inline-block;
-    font-size: 180px;
-    margin-bottom: -1em;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.light
-{
-    padding-top: 17px;
-    opacity: 0.7;
-    font-size: 150px;
-}
-
-/*PROFESSIONAL PAGE*/
-table
-{
-    font-family: 'Cabin', Geneva, sans-serif;
-    width: 96%;
-    font-size: 20px;
-    margin: 0 auto;
-    padding-bottom: 5px;
-}
-#date
-{
-    text-align: right;
-    font-style: italic;
 }
