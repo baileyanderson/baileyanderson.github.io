@@ -10,7 +10,7 @@
     <meta name="description" content="Personal Webpage">
     <meta name="author" content="Bailey Anderson, University of Florida">
 
-    <title>Bailey Anderson</title>
+    <title>BA Contact</title>
 
     <!--LINK(s) TO STYLESHEET (both necessary)-->
     <!-- Bootstrap Core CSS -->
@@ -25,6 +25,9 @@
     <!--BROWSER ICON(s) (created with http://www.favicomatic.com)-->
     <link rel="icon" type="image/png" href="photos/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="photos/favicon-16x16.png" sizes="16x16" />
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Apparently Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -52,13 +55,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#" class="self">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
                         <a href="experience.html">Experience</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="#" class="self">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -67,44 +70,41 @@
         <!-- /.container -->
     </nav>
 
-    <!--COVER IMAGE & TEXT-->
-    <div class="cover">
-        <img id="cover-image" src="photos/baldrock.jpg" alt="Bald Rock, Caesar's Head SC"> <!--alt for alternative text if image can't display-->
-        <h1><em>Hello.</em></h1>
-    </div>
-    
     <!--MAIN PAGE CONTENT-->
-    <div class="container" id="content">
+    <div class="container first" id="content">
+        <h2>Should you like to get in touch,<br>I can be contacted through the following mediums:</h2>
 
-        <h2>My name is Bailey A.</h2>
 
-        <!-- START THE FEATURETTES -->
-        <div class="row featurette">
-            <div class="col-md-7 col-md-push-3" > <!--pushes it to the right-->
-              <h3 class="featurette-heading">← This is me.<span class="text-muted"> I am...</span></h3>
-              <p class="lead">an aspiring software developer in my third year at the University of Florida. Being in pursuit of a Bachelor's in Computer Science with a minor in Communication Studies, I like to code things and then make people listen to me talk about it.</p>
-            </div>
-            <div class="col-md-5 col-md-pull-8"> <!--pulls it to the left-->
-              <img class="featurette-image img-responsive center-block" src="photos/me.png" alt="This would have been a picture of me if it had loaded correctly. Unfortunately, I guess just use your imagination.">
-            </div>
-        </div>
+        <!-- Three columns of text below the carousel -->
+        <div class="row columns">
 
-        <div class="row featurette">
-            <div class="col-md-7 col-md-push-1">
-              <h3 class="featurette-heading" id="dog-heading">This is my dog Dandy. →<span class="text-muted"></span></h3>
-              <p class="lead" id="dog-text">He is approximately equally important. He has never <br> programmed anything (but I'd support him if he wanted to).</p>
-            </div>
-            <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" src="photos/dan.png" alt="Picture a small shih tzu with a small bowtie." id="dog-pic">
-            </div>
-        </div>
-        <!-- /END THE FEATURETTES -->
+            <div class="col-lg-4">
+                <div class="pic">
+                    <i class="fa fa-laptop"></i>
+                </div>
+                <h3>Email</h3>
+                <p>baileyanderson3@gmail.com</p>
+            </div><!-- /.col-lg-4 -->
 
-        <h2 id="pre-footer">Please see the tabs above for further professional details.</h2>
+            <div class="col-lg-4">
+                <div class="pic light">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <h3>Traditional Mail</h3>
+                <p>Available to potential employers or other relevant parties upon request.</p>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-lg-4">
+                <div class="pic light">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <h3>Phone</h3>
+                <p>Available to potential employers or other relevant parties upon request.</p>
+                </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
 
     </div>
-    <!-- /.container -->
-     
+
     <!--FOOTER-->
     <footer>
         <div class="row">
@@ -114,9 +114,6 @@
         </div>
         <!-- /.row -->
     </footer>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 

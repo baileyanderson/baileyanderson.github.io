@@ -7,15 +7,16 @@
 
 html,
 
-body {
+body 
+{
+    background-color: #E3E9FC;
     height: 100%;
 }
 h1
 {
-    padding-top: 60px; /*specific to only big title*/
     text-align: center;
     color: #636F92;
-    font: 400 120px/1.3 'Lobster Two', Geneva, sans-serif;
+    font-family: 'Lobster Two', Geneva, sans-serif;
     text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
 }
 h2
@@ -29,12 +30,71 @@ h3
     color: #6C79A0;
     font: 400 30px/1.3 'Lobster Two', Geneva, sans-serif;
 }
-
 p
 {
-    line-height: 2px;
+
     font-family: 'Cabin', Geneva, sans-serif;
     position: relative;
+}
+footer 
+{
+    margin: 20px 20px;
+    color: #636F92;
+}
+hr
+{
+    margin-top: -1em;
+    border: 1px solid #7E8DBB;
+    width: 100%;
+}
+
+.self
+{
+    text-decoration: underline !important;
+}
+.cover
+{
+    position: relative;
+    height: 50%;
+    width:100%;
+    border-bottom: 5px solid #7E8DBB;
+}
+.cover > h1
+{
+    font-size: 10em;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    right: 10%;
+    z-index: 10;
+    padding-bottom: 20px;
+}
+.first
+{
+    padding-top: 55px;
+}
+.first > h2
+{
+    text-align: center;
+}
+#topbar
+{
+    background-color: #C6D1F0;
+}
+#cover-image
+{
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+#content
+{
+    position: relative;
+    background-color: #D3DCF5;
+    border: dashed 5px #BDC9E8;
+    border-top: none;
+    padding-bottom: 50px;
+    border-bottom: 3px solid #7E8DBB;
 }
 #dog-text
 {
@@ -46,22 +106,25 @@ p
     text-align: right;
     font-size: 25px;
 }
-.self
+#dog-pic
 {
-    text-decoration: underline !important;
+    max-width: 55%;
+    height: auto;
+}
+#pre-footer
+{
+    position: absolute;
+    bottom: 5%;
+    display: block;
 }
 
-footer {
-    margin: 50px 0;
-}
 
-
+/*OVERRIDING BOOTSTRAP.CSS*/
 .item,
 .active,
 .carousel-inner {
     height: 100%;
 }
-
 .fill {
     width: 100%;
     height: 100%;
@@ -71,21 +134,10 @@ footer {
     background-size: cover;
     -o-background-size: cover;
 }
-.row
+.featurette
 {
-
+    display: block;
     padding-left: 30px;
-}
-
-.over-image {
-    position: absolute;
-    right: 15%;
-    top: 30px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    text-align: center;
 }
 
 .img-circle
@@ -93,41 +145,12 @@ footer {
     display: inline;
     padding-right: 10px;
 }
-.cover
-{
-    border-bottom: 5px solid #7E8DBB;
-}
-
-#topbar
-{
-    background-color: #C6D1F0;
-
-}
-
-#cover-image
-{
-    padding-top: 55px;
-    opacity: 0.4;
-    height: 55%;
-}
-
-#content
-{
-    background-color: #E0E6F8;
-    border: dashed 5px #CED8F6;
-    border-top: none;
-    padding-bottom: 0px;
-    border-bottom: 3px solid #7E8DBB;
-}
-
-/*OVERRIDING BOOTSTRAP.CSS*/
-
 /*edges of the navbar*/
 .navbar-inverse {
     background-color: #C6D1F0;
     border-bottom: 5px solid #7E8DBB;
-}
 
+}
 /*navbar text*/
 .navbar-inverse .navbar-nav > li > a {
   color: #7E8DBB;
@@ -135,7 +158,6 @@ footer {
   font-size: 1.56em;
   font-weight: 700;
 }
-
 .col-md-5
 {
     display: inline;
@@ -144,9 +166,8 @@ footer {
 .col-md-7
 {
     display: inline;
-    padding-left: 50px;
+    padding-left: 80px;
 }
-
 /*picture*/
 .img-responsive,
 .thumbnail > img,
@@ -156,5 +177,40 @@ footer {
   display: block;
   max-width: 75%;
   height: auto;
+}
 
+/*CONTACT PAGE*/
+.columns
+{
+    text-align: center;
+}
+.pic
+{
+    display: inline-block;
+    font-size: 180px;
+    margin-bottom: -1em;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.light
+{
+    padding-top: 17px;
+    opacity: 0.7;
+    font-size: 150px;
+}
+
+/*PROFESSIONAL PAGE*/
+table
+{
+    font-family: 'Cabin', Geneva, sans-serif;
+    width: 96%;
+    font-size: 20px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+#date
+{
+    text-align: right;
+    font-style: italic;
 }
